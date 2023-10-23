@@ -11,19 +11,12 @@ import { getAuth } from 'firebase/auth';
 // Your web app's Firebase configuration
 
 const firebaseConfig = {
-
-  apiKey: 'AIzaSyCyFPrq4c7FtYSntpkFqOCXeE1Bl03SzEA',
-
-  authDomain: 'colective-iscool.firebaseapp.com',
-
-  projectId: 'colective-iscool',
-
-  storageBucket: 'colective-iscool.appspot.com',
-
-  messagingSenderId: '423977582808',
-
-  appId: '1:423977582808:web:4a2df0105bb6502d35d7ad',
-
+  apiKey: "AIzaSyAKmsT2G9HmU8IliuMV5LvQfg0zlJXb4TM",
+  authDomain: "social-2fe53.firebaseapp.com",
+  projectId: "social-2fe53",
+  storageBucket: "social-2fe53.appspot.com",
+  messagingSenderId: "731301316462",
+  appId: "1:731301316462:web:eb40248e0d43045ace637f"
 };
 
 // Initialize Firebase
