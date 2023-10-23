@@ -67,9 +67,7 @@ input{
 #register {
     list-style-type:none;
     padding-inline-start:0%;
-   
 }
-
 
 button{
     display:flex;
@@ -391,7 +389,6 @@ h3{
     margin-top: 0.5rem;
     background-color:#c1d9e0;
     border:none;
-
   }
 
   #sumLikes{
