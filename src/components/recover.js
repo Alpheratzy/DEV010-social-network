@@ -1,11 +1,12 @@
 import { getAuth, sendPasswordResetEmail } from 'firebase/auth';
 import firebaseApp from './firebase.js';
+import logo256 from '../assets/logo256.png';
 
 const auth = getAuth(firebaseApp);
 
 function recover() {
   const logo = document.createElement('img');
-  logo.setAttribute('src', './assets/logo256.png');
+  logo.setAttribute('src', logo256);
   logo.setAttribute('class', 'logoRecover');
 
   const section = document.createElement('section');

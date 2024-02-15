@@ -46,22 +46,22 @@ function resetPassword() {
 
   btnNewPass.addEventListener('click', async () => {
     if (newPass.value === '' || confirmPass.value === '') {
-      console.log('Por favor escribe tu nueva contraseña');
+      // console.log('Por favor escribe tu nueva contraseña');
       return;
     }
     if (newPass.value !== confirmPass.value) {
-      console.log('Contraseñas no coinciden');
+      // console.log('Contraseñas no coinciden');
       return;
     }
     if (newPass.value.length < 6) {
-      console.log('La contraseña tiene que tener más de 6 caracteres');
+      // console.log('La contraseña tiene que tener más de 6 caracteres');
       return;
     }
     try {
       await updatePassword(auth.currentUser, newPass.value);
-      console.log('Contraseña actualizada');
+      // console.log('Contraseña actualizada');
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   });
 

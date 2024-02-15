@@ -20,7 +20,8 @@
     "dev": "vite dev src",
     "start": "npm run dev",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.19.4",
@@ -49,6 +50,7 @@
     "@playwright/test": "^1.38.1",
     "firebase": "^10.3.1",
     "firebase-admin": "^11.10.1",
+    "gh-pages": "^6.0.0",
     "s": "^1.0.0"
   }
 }

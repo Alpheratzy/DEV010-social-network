@@ -1,10 +1,9 @@
 import {
   getAuth, signInWithPopup, GoogleAuthProvider, signInWithEmailAndPassword,
 } from 'firebase/auth';
-
 import colectiveIsCool from '../assets/Colective_isCool.png';
-/* import eyeShut from '../assets/shutEye.png';
-import eyeOpen from '../assets/openEye.png'; */
+import eyeShut from '../assets/shutEye.png';
+import eyeOpen from '../assets/openEye.png';
 import darkGoogle from '../assets/btn_google_signin.png';
 import firebaseApp from './firebase.js';
 
@@ -93,8 +92,7 @@ function login() {
   const btnShowPass = document.createElement('button');
   btnShowPass.setAttribute('id', 'btnShowPass');
   btnShowPass.classList = 'btnShowPassword';
-  btnShowPass.style.backgroundImage = 'url(/assets/shutEye.png)';
-  // btnShowPass.style.backgroundImage = eyeShut;
+  btnShowPass.setAttribute('style', `background-image: url(${eyeShut})`);
   btnShowPass.classList = 'buttonsShowHidePassword';
 
   passwordInput.insertAdjacentElement('afterend', btnShowPass);
@@ -104,12 +102,10 @@ function login() {
   btnShowPass.addEventListener('click', () => {
     if (passwordVisible) {
       passwordInput.type = 'password'; // ocultar contrasena
-      btnShowPass.style.backgroundImage = 'url(/assets/shutEye.png)';
-      // btnShowPass.style.backgroundImage = eyeShut;
+      btnShowPass.setAttribute('style', `background-image: url(${eyeShut})`);
     } else {
       passwordInput.type = 'text'; // mostrar contrasena
-      btnShowPass.style.backgroundImage = 'url(/assets/openEye.png)';
-      // btnShowPass.style.backgroundImage = eyeOpen;
+      btnShowPass.setAttribute('style', `background-image: url(${eyeOpen})`);
     }
     passwordVisible = !passwordVisible; // Cambiar el estado de visibilidad
   });
@@ -118,7 +114,6 @@ function login() {
   const googleSignInOption = document.createElement('div');
   const googleSignInLink = document.createElement('img');
   googleSignInLink.setAttribute('id', 'googleSignInLink');
-  
   googleSignInLink.setAttribute('src', darkGoogle); // poner url
   googleSignInLink.setAttribute('alt', 'Google Sign-In');
   googleSignInOption.appendChild(googleSignInLink);

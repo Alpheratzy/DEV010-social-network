@@ -7,6 +7,8 @@ import newUser from './components/NewUserForm.js';
 import preferences from './components/preferences.js';
 import timeLine from './components/TimeLine.js';
 
+console.log("LOADED")
+
 const root = document.getElementById('root');
 
 const routes = [
@@ -22,8 +24,10 @@ const routes = [
 const defaultRoute = '/';
 
 function navigateTo(hash) {
+  console.log({ hash });
   const route = routes.find((routeFind) => routeFind.path === hash);
-
+  console.log({ route });
+  console.log("com", route.component);
   if (route && route.component) {
     window.history.pushState(
       {},
