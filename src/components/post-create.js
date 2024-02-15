@@ -1,6 +1,6 @@
-import editPost from './firestoreEdit';
+import editPost from './firestore-edit.js';
 import likes from './likes.js';
-import eliminarPost from './firestoreDelete';
+import eliminarPost from './firestore-delete.js';
 import like from '../assets/like.png';
 import unlike from '../assets/unlike.png';
 
